@@ -1,61 +1,154 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hooded Leaders</title>
-		<link rel="stylesheet" href="stylesheets/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-		<script src="js/jquery.scrollTo.js"></script>
-		<script src="js/main.js"></script>
-	</head>
-	<body>
-		<div class="nav-wrapper">
-			<nav>
-				<ul class="nav-main">
-					<li><a href="#page-home">HL</a></li>
-					<li><a href="#page-videos">Videos</a></li>
-					<li><a href="#page-music">Music</a></li>
-					<li><a href="#page-merch">Merch</a></li>
-					<li><a href="#page-tour">Tour</a></li>
-				</ul>
-			</nav>
-		</div>
-		
-		<section id="page-home">
-			<h2 class="header-hl">Hooded Leaders</h2>
-			<div id="home-wrap"></div>
-				
-		</section>
+<html >
 
-		<section id="page-videos">
-			<h2 class="header">Videos</h2>
-			<div class="vc">
-			<div class="video-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/sUATkj9M188" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-		</section>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<section id="page-music">
-			<h2 class="header">Music</h2>
-			<div class="vc">
-				<div class="video-container">
-					<iframe align="middle" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/155012289&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-				</div>
-			</div>
-				
+    <title>Final Project WD 100</title>
 
-		</section>
+    <link rel="stylesheet" href="css/leaders.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
-		<section id="page-merch">
-			<h2 class="header">Merch</h2>
-				
-		</section>
 
-		<section id="page-tour">
-			<h2 class="header">Tour Dates</h2>
-				
-		</section>
-	</body>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!--Navbar-->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+          <a class="navbar-brand page-scroll" href="#page-top"></a>
+          <!--placeholder qrcode for possible navbar icon-->
+          <a href="#" class="pull-left"><i class="fa fa-qrcode fa-4x"></i></a>
+
+      </div>
+
+      <!--navbar collapse-->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav textco">
+          <li class="hidden">
+            <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#intro">HL</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">Video</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#services">Music</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Merch</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact2">Tour</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Home Page -->
+    <section id="intro" class="intro-section">
+      <div class="container">
+          <div class="row">
+          <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+          <h2 class="header-hl">Hooded Leaders</h2>
+              </div>
+          </div>
+          </div>
+    </section>
+
+    <!--page Video -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+                <h2 class="header">Videos</h2>
+                <!--responsive iframe tag embed-respons etc -->
+                <div class="embed-responsive-item">
+                <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://www.youtube.com/embed/sUATkj9M188" frameborder="0" allowfullscreen></iframe>
+
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Page Music  Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+            <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+            <h2 class="header">Music</h2>
+            <div class="embed-responsive-item">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe align="middle"  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/155012289&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+
+        </section>
+
+
+
+
+    <!-- Merch Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+            <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+              <h2 class="header">Merch</h2>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+</section>
+
+<!-- Tour Section -->
+<section id="contact2" class="contact-section">
+    <div class="container">
+        <div class="row">
+        <div class=".col-xs-12 .col-sm-6 .col-lg-8">
+        <h2 class="header">Tour Dates</h2>
+        </div>
+        </div>
+        </div>
+</section>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>
